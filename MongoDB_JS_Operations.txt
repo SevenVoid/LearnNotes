@@ -1,0 +1,14 @@
+MongoDB的CRUD操作：
+	query：查询语句
+	return： 返回的列数据
+	
+数据库级别操作：
+	连接数据库操作：connect(IP:Port/DB);
+
+	
+一、数据库查询操作：
+		find , findOne :
+			1、find: find({query},{return});  普通查询，需要满足query条件，并返回return指定的列
+			2、find: find({"Field":{$gte:new Date(year,month-1(JS),day), $lte:new Date(....)}},{return}}) ; 时间查询，查询某个时间字段的值大于等于某个日期
+			也可以使用ISODate的日期格式，new　ISODate("2014-02-05T16:00:00Z") 表示2014-02-06.
+			3、findOne: 返回匹配的一条记录
