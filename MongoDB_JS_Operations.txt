@@ -9,6 +9,6 @@ MongoDB的CRUD操作：
 一、数据库查询操作：
 		find , findOne :
 			1、find: find({query},{return});  普通查询，需要满足query条件，并返回return指定的列
-			2、find: find({"Field":{$gte:new Date(year,month-1(JS),day), $lte:new Date(....)}},{return}}) ; 时间查询，查询某个时间字段的值大于等于某个日期
-			也可以使用ISODate的日期格式，new　ISODate("2014-02-05T16:00:00Z") 表示2014-02-06.
+			2、find: find({"Field":{$gte:new Date("2015-02-04"), $lte:new Date(....)}},{return}}) ; 时间查询，查询某个时间字段的值大于等于某个日期,Mongo在JS脚本中的
+			日期查询只能是上下这种方式，也可以使用ISODate的日期格式，new　ISODate("2014-02-05T16:00:00Z") 表示2014-02-06.
 			3、findOne: 返回匹配的一条记录
