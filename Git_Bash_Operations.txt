@@ -18,3 +18,4 @@ git merge branchname,
 git merge --no-ff -m "" branchname
 git remote -v
 git branch --set-upstream branchname origin/branchname
+git ls-files 列出Git Index中所有的文件（也可以相当于查看本地库中所有的文件）
